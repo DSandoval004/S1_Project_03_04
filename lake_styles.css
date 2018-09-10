@@ -1,0 +1,116 @@
+﻿@charset "utf-8";
+
+/* Set the charset and linked the fonts. */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.ttf') format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Diego Sandoval
+   Date:   09/10/18
+   
+   Filename: lake_styles.css
+
+*/
+/* Structural Styles */
+/* Set up CSS rules to effect the structure of the website. Changed the background-color of html body and header tag. Then set up some font and padding and margin. */
+html {
+    background-color: rgb(205, 200, 150);
+}
+
+body {
+    background: rgb(255, 250, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+
+header {
+    background-color: rgb(120, 90, 125);
+}
+
+
+
+p {
+    margin: 0px;
+    padding: 15px 25px 0px;
+}
+
+/* Navigation Styles */
+/* set up the nav so that it changes color when you hover over it and linked it to a class so it doesnt effect the other nav on the website. */
+nav.navbar a {
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav.navbar a:visited,
+nav.navbar a:link {
+    color: rgb(200, 175, 200);
+    text-decoration: none;
+    background-color: rgba(107, 107, 107, 0.4);
+}
+
+nav.navbar a:hover,
+nav.navbar a:active {
+    color: rgba(200, 175, 200, 0.7);
+    background-color: rgba(107, 107, 107, 0.7);
+}
+
+/* Section Styles Left Column */
+section#leftcol h1 {
+    font-family: Champagne, cursive;
+    font-size: 4em;
+    margin: 0px;
+    padding: 5px 10px 5px;
+    font-weight: normal;
+}
+
+
+
+section#leftcol aside h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 5px 10px 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+section#leftcol aside h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 5px 10px 5px;
+    font-weight: normal;
+
+}
+
+section#leftcol aside p {
+    padding: 10px;
+}
+
+section#leftcol aside.notes {
+    background-color: rgb(225, 165, 155)
+}
+
+section#leftcol aside.events {
+    background-color: rgb(205, 185, 130)
+}
+
+/* Section Styles Right Column */
+section#rightcol {
+    background-color: rgb(215, 200, 220);
+}
