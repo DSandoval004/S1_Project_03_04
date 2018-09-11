@@ -29,6 +29,7 @@
 /* Set up CSS rules to effect the structure of the website. Changed the background-color of html body and header tag. Then set up some font and padding and margin. */
 html {
     background-color: rgb(205, 200, 150);
+    /* cursor: wait; */
 }
 
 body {
@@ -40,8 +41,6 @@ body {
 header {
     background-color: rgb(120, 90, 125);
 }
-
-
 
 p {
     margin: 0px;
@@ -70,6 +69,7 @@ nav.navbar a:active {
 }
 
 /* Section Styles Left Column */
+/* Set up the left column. Changed the font, size, margin, padding and weight of h1 and h2, also made h2 centered. Then set up the asides for notes and upcoming events. Then made the list dot circles. */
 section#leftcol h1 {
     font-family: Champagne, cursive;
     font-size: 4em;
@@ -77,8 +77,6 @@ section#leftcol h1 {
     padding: 5px 10px 5px;
     font-weight: normal;
 }
-
-
 
 section#leftcol aside h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -98,19 +96,123 @@ section#leftcol aside h2 {
 
 }
 
+/* Set up the asides with CSS rules. Made them have different background, and changed the list icon. */
+section#leftcol aside {
+    width: 45%;
+}
+
 section#leftcol aside p {
-    padding: 10px;
+    padding: 15px;
 }
 
 section#leftcol aside.notes {
-    background-color: rgb(225, 165, 155)
+    background-color: rgb(225, 165, 155);
 }
 
 section#leftcol aside.events {
-    background-color: rgb(205, 185, 130)
+    background-color: rgb(205, 185, 130);
+}
+
+section#leftcol aside.notes li {
+    list-style: circle;
+    line-height: 1.5em;
 }
 
 /* Section Styles Right Column */
+/* Set up the right column CSS. Changed the font and size of the h2 tags. Made the links change color when you hover over them. Then made the blockquote have quotation marks, be a different color and increased the the size of the font of the blockquote. */
 section#rightcol {
     background-color: rgb(215, 200, 220);
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 150px;
 }
+
+section#rightcol h2 {
+    font-family: Champagne, cursive;
+    font-size: 2em;
+    font-weight: normal;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/* Set up the nav list in the right column, so tht when you hover over the links they change color. then changed the text color and size.  */
+section#rightcol li {
+    list-style: none;
+    font-size: .9em;
+}
+
+section#rightcol ul {
+    padding-left: 20px;
+}
+
+section#rightcol a {
+    text-decoration: none;
+}
+
+section#rightcol nav a:visited,
+section#rightcol nav a:link {
+    color: black;
+    text-decoration: none;
+}
+
+section#rightcol nav a:hover,
+section#rightcol nav a:active {
+    color: white;
+}
+
+/* Made the blockquote have quotes around it. I also made it not have so much akward space. */
+section#rightcol blockquote {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(120, 100, 130);
+    padding-top: 35px;
+    margin-right: 50px;
+    margin-left: 0px;
+    quotes: '\201C''\201D';
+    font-size: 1.5em;
+}
+
+section#rightcol blockquote::before {
+    content: open-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section#rightcol blockquote::after {
+    content: close-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    line-height: 0px;
+    top: 15px;
+}
+
+/* footer styles */
+/* set up the footer html. added link, then made the change color when hovered over and changed the font color. */
+footer {
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .75);
+}
+
+footer>em:hover {
+    color: rgba(255, 255, 255, .75);
+    cursor: pointer;
+}
+
+/* End of CSS code, thank you for going through it and reviewing this if you chosse this project, have a great day, and I hope you are having fun grading. &#9786;  */
